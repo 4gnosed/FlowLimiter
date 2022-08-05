@@ -1,0 +1,10 @@
+spring:
+  redis:
+    host: 120.77.32.19
+    password: 1234
+    port: 6789
+limit:
+  maxBurst: 1000 #最大突发请求1000
+  tokens: 1000  #每1秒生成1000个令牌
+  seconds: 1    #每1秒生成1000个令牌
+  requestOneTime: 1 #每次请求获取一个令牌，1000个令牌容许1000个请求
