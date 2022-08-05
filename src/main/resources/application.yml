@@ -1,8 +1,8 @@
 spring:
   redis:
-    host: 120.77.32.19
+    host: 127.0.0.1
     password: 1234
-    port: 6789
+    port: 6379
 limit:
   maxBurst: 1000 #最大突发请求1000
   tokens: 1000  #每1秒生成1000个令牌
